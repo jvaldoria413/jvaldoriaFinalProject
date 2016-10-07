@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/x2y2Txt"
+        android:textColor="@color/foreground_material_light"
+        android:editable="false"
+        android:layout_above="@+id/diffxyTxt"
+        android:layout_alignLeft="@+id/x1y1Txt"
+        android:layout_alignStart="@+id/x1y1Txt" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/diffxyTxt"
+        android:textColor="@color/foreground_material_light"
+        android:editable="false"
+        android:layout_above="@+id/MotionTxt"
+        android:layout_alignLeft="@+id/x2y2Txt"
+        android:layout_alignStart="@+id/x2y2Txt" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/MotionTxt"
+        android:textColor="@color/foreground_material_light"
+        android:editable="false"
+        android:layout_above="@+id/QuadrantTxt"
+        android:layout_alignLeft="@+id/diffxyTxt"
+        android:layout_alignStart="@+id/diffxyTxt" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/QuadrantTxt"
+        android:textColor="@color/foreground_material_light"
+        android:editable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/MotionTxt"
+        android:layout_alignStart="@+id/MotionTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quadrant:"
+        android:textColor="@color/foreground_material_light"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignBaseline="@+id/QuadrantTxt"
+        android:layout_alignBottom="@+id/QuadrantTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion:"
+        android:textColor="@color/foreground_material_light"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/MotionTxt"
+        android:layout_alignBottom="@+id/MotionTxt"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diff X,Y:"
+        android:textColor="@color/foreground_material_light"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/diffxyTxt"
+        android:layout_alignBottom="@+id/diffxyTxt"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X2,Y2:"
+        android:textColor="@color/foreground_material_light"
+        android:id="@+id/textView5"
+        android:layout_alignBaseline="@+id/x2y2Txt"
+        android:layout_alignBottom="@+id/x2y2Txt"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X1,Y1:"
+        android:textColor="@color/foreground_material_light"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/x1y1Txt"
+        android:layout_alignBottom="@+id/x1y1Txt"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <ImageView
+        android:layout_width="2.5in"
+        android:layout_height="1.5in"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/x1y1Txt"
+        android:textColor="@color/foreground_material_light"
+        android:editable="false"
+        android:layout_above="@+id/x2y2Txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

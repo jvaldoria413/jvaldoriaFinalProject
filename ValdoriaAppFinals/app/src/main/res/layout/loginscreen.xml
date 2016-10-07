@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mobilecomputingfinals.valdoriaappfinals.LogInScreen"
+    android:background="@android:color/darker_gray">
+
+    <EditText
+        android:id="@+id/TxtEmail"
+        android:layout_width="2in"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TxtPass2"
+        android:layout_alignLeft="@+id/TxtPass2"
+        android:layout_alignStart="@+id/TxtPass2"
+        android:textColor="@color/foreground_material_light"
+        android:hint="Email or Username"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/foreground_material_light"
+        android:background="@color/accent_material_light"
+        android:text="Show"
+        android:id="@+id/BtnShow"
+        android:layout_alignBaseline="@+id/TxtPass2"
+        android:layout_alignBottom="@+id/TxtPass2"
+        android:layout_alignRight="@+id/TxtEmail"
+        android:layout_alignEnd="@+id/TxtEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/foreground_material_light"
+        android:text="Don't Have an Account? Let's Sign Up"
+        android:id="@+id/SignUp"
+        android:onClick="SignUp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/BtnLogIn"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:textSize="14pt"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/foreground_material_light"
+        android:background="@color/accent_material_light"
+        android:onClick="login"
+        android:text="Log In"
+        android:layout_above="@+id/SignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp" />
+
+    <EditText
+        android:id="@+id/TxtPass2"
+        android:layout_width="2in"
+        android:layout_height="wrap_content"
+        android:textColor="@color/foreground_material_light"
+        android:hint="Password"
+        android:password="true"
+        android:layout_above="@+id/BtnLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/TxtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="27dp" />
+
+</RelativeLayout>

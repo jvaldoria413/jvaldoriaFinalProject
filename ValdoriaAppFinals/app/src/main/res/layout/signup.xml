@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email Address:"
+        android:id="@+id/txtEmail"
+        android:textSize="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password:"
+        android:id="@+id/txtPass"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/TxtPass2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Confirm Pass:"
+        android:id="@+id/txtConfirm"
+        android:textSize="15dp"
+        android:layout_marginTop="91dp"
+        android:layout_below="@+id/TxtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="UserName:"
+        android:id="@+id/textView"
+        android:textSize="15dp"
+        android:layout_above="@+id/TxtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Last Name:"
+        android:id="@+id/textView2"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/TxtLname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="First Name:"
+        android:id="@+id/textView3"
+        android:textSize="15dp"
+        android:layout_above="@+id/TxtLname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtUname"
+        android:layout_above="@+id/TxtEmail"
+        android:layout_alignLeft="@+id/TxtEmail"
+        android:layout_alignStart="@+id/TxtEmail" />
+
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtLname"
+        android:layout_above="@+id/TxtUname"
+        android:layout_alignLeft="@+id/TxtUname"
+        android:layout_alignStart="@+id/TxtUname"
+        android:layout_marginBottom="28dp" />
+
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtFname"
+        android:layout_above="@+id/TxtLname"
+        android:layout_alignLeft="@+id/TxtLname"
+        android:layout_alignStart="@+id/TxtLname" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtEmail"
+        android:layout_alignBottom="@+id/txtEmail"
+        android:layout_toRightOf="@+id/txtEmail"
+        android:layout_toEndOf="@+id/txtEmail" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/TxtPass2"
+        android:layout_above="@+id/TxtPass"
+        android:layout_toRightOf="@+id/txtEmail"
+        android:layout_toEndOf="@+id/txtEmail" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtPass"
+        android:inputType="textPassword"
+        android:layout_alignBottom="@+id/txtConfirm"
+        android:layout_alignLeft="@+id/TxtPass2"
+        android:layout_alignStart="@+id/TxtPass2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/accent_material_light"
+        android:textColor="@color/foreground_material_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Show"
+        android:id="@+id/BtnShow1"
+
+        android:layout_alignTop="@+id/TxtPass2"
+        android:layout_toRightOf="@+id/TxtPass2"
+        android:layout_toEndOf="@+id/TxtPass2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/accent_material_light"
+        android:textColor="@color/foreground_material_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Show"
+        android:id="@+id/BtnShow2"
+        android:layout_below="@+id/TxtPass2"
+        android:layout_toRightOf="@+id/TxtPass"
+        android:layout_toEndOf="@+id/TxtPass" />
+
+    <Button
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:textSize="14pt"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:background="@color/accent_material_light"
+        android:textColor="@color/foreground_material_light"
+        android:onClick="register"
+        android:text="Register"
+        android:id="@+id/BtnOk"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/BtnShow2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
